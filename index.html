@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: pink;
+    }
+    .text1{
+      width: 100%;
+      opacity: 0;
+      animation: 
+      typing 4s steps(40, end),
+      cursor .4s step-end infinite alternate;
+      animation-delay: 16.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes type3{
+      0%{
+        width: 0;
+      }
+      1%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+
+
+
+.popup{
+  background-color: blue;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top:50%;
+  color:;
+  font-family: "Nunito Sans", sans-serif;
+  
+  
+  
+}
+
+#close{
+width: 200px;
+font-style: normal;
+background-color: indigo;
+color: white;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container h1:nth-child(1){
+  font-family: fontbaruwak;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  opacity: 0;
+  font-size: 100;
+  animation: type3 3s steps(40, end);
+  animation-fill-mode: forwards;
+}
+@keyframes type3{
+  0%{
+    width: 0;
+  }
+  
+  100%{
+    opacity: 1;
+  }
+}
+.popup p{
+  font-size: 20px;
+}
+  </style>
+</head>
+<body>
+  <!--popup-->
+  <div class="popup">
+    <br>
+    <center><div class="container">
+      <h1>BESOK SHABU HACHI</h1>
+     </div></center>
+     <center><p>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br></p>
+    <div class="btn">
+      <button id="close" onclick="mainkan()"><p>OPEN</p></button>
+    </div>
+    </div>
+  </div>
+  <!--popup end-->
+  <div class="wrap">
+    
+    <center><h1>BESOK SHABU HACHI</h1>
+    <div class="vid">
+      <center><video src="rutnug.mp4" class="video1"  autoplay muted loop width="20%"></video>
+    </div>
+    <center><p>ini vidnya di atas lol ^^^^<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br>BESOK<br>SHABU<br>HACHI<br></p></center>
+  </div>
+</body>
+<script>
+  var musik = new Audio();
+musik.src = "lnoe.mp3";
+function mainkan(){
+  var musikbtn = musik;
+  musikbtn.play()
+}
+
+document.querySelector("#close").addEventListener
+("click", function(){
+  document.querySelector(".popup").style.display =
+   "none"
+});
+
+</script>
+</html>
